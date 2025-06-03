@@ -35,10 +35,13 @@ if ($('.go-top').length) {
 
    
 
-    $('.change-mode').click(() => {
-      $('body').addClass('dark-mode')
-    })
+$('.Change_mode').click(function () {
+  $('body').toggleClass('dark-mode');
 
+  // Toggle icon
+  const icon = $(this).find('i');
+  icon.toggleClass('fa-moon fa-sun');
+});
 
     //form 
 

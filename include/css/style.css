@@ -17,6 +17,46 @@
   --white-color: #fff;
   --black-color: #000;
 }
+body.dark-mode {
+  --yellow-color: var(--black-color);
+  --gray-color: var(--black-color);
+  --lightBlue-color: var(--black-color);
+  --pista-color: var(--black-color);
+  --purple-color: var(--black-color);
+  --pink-color: var(--black-color);
+  --lightYellow-color: var(--black-color);
+}
+
+body.dark-mode h1 {
+  color: var(--white-color);
+}
+body.dark-mode .about-container p {
+  color: var(--white-color);
+}
+
+body.dark-mode .heading-container h3 {
+  color: var(--white-color);
+}
+body.dark-mode .heading-container p {
+  color: var(--white-color);
+}
+
+body.dark-mode .experience-box p {
+  color: var(--white-color);
+}
+
+body.dark-mode .form-label {
+  color: var(--white-color);
+}
+body.dark-mode .alert-success {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+body.dark-mode .alert-danger {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
 
 h1,
 h2,
@@ -1072,18 +1112,24 @@ section {
 }
 
 .alert {
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    font-size: 40px;
-    font-weight: 700;
-    z-index: 999;
-    align-items: center;
-    text-align: center;
-    line-height: 51px;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  font-weight: 700;
+  z-index: 999;
+  align-items: center;
+  text-align: center;
+  line-height: 51px;
+}
+.Change_mode {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 99999;
 }
