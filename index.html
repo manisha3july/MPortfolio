@@ -45,7 +45,7 @@
                   <li><a href="#contact"><span><i class="fa fa-mobile"></i>Contact</span></a></li>
                 </ul>
               </div>
-              <a target="_blank" class="btn btn-default mt-5" href="include/images/Manisha_V1.pdf">Download Resume</a>
+              <a target="_blank" class="btn btn-default mt-5" href="include/images/Manisha_V1.pdf">View Resume</a>
               <!-- <button ></button> -->
             </div>
           </section>
@@ -68,16 +68,34 @@
               <h2 class="mb-2">
                 <span>Frontend Developer</span>
               </h2>
-              <p>I'm a creative and detail-oriented Frontend Developer with <strong class="green">5+ years</strong> of
-                experience delivering
-                high-quality, responsive, and scalable web applications. I’ve developed and maintained <strong>30+ web
-                  projects</strong>,
-                improving load times by up to 40% and increasing user engagement through clean, performance-optimized
-                code. Proficient in React.js, JavaScript, HTML5, CSS3, Sass, Tailwind CSS, and Bootstrap, I specialize
-                in building intuitive UIs that enhance user experience. My work includes extensive UI/UX design,
-                customization of Learning Management Systems (LMS), and front-end performance optimization. Passionate
-                about continuous learning and staying current with modern web technologies, I strive to create seamless,
-                accessible digital experiences that drive results.</p>
+              <div class="show-desk">
+                <p>I'm a creative and detail-oriented Frontend Developer with <strong class="green">5+ years</strong> of
+                  experience delivering
+                  high-quality, responsive, and scalable web applications. I’ve developed and maintained <strong>30+ web
+                    projects</strong>,
+                  improving load times by up to 40% and increasing user engagement through clean, performance-optimized
+                  code. Proficient in React.js, JavaScript, HTML5, CSS3, Sass, Tailwind CSS, and Bootstrap, I specialize
+                  in building intuitive UIs that enhance user experience. My work includes extensive UI/UX design,
+                  customization of Learning Management Systems (LMS), and front-end performance optimization. Passionate
+                  about continuous learning and staying current with modern web technologies, I strive to create
+                  seamless,
+                  accessible digital experiences that drive results.</p>
+              </div>
+
+
+              <div class="show-mob">
+                <p>Creative and detail-oriented <strong>Frontend Developer</strong> with <strong class="green">5+
+                    years</strong> of
+                  experience in designing and developing responsive, accessible, and scalable web applications.
+                  Proficient in
+                  <strong>React.js, JavaScript, HTML5, CSS3, Sass, Tailwind CSS, and Bootstrap</strong>. Experienced in
+                  UI/UX
+                  design, LMS customization, and performance optimization. Passionate about clean code, intuitive
+                  design, and
+                  continuous learning.
+                </p>
+                <a target="_blank" class="btn btn-default " href="include/images/Manisha_V1.pdf">View Resume</a>
+              </div>
 
             </div>
           </section>
@@ -337,8 +355,11 @@
                 </div>
               </div>
               <!-- Optional: Navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="button-box">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
             </div>
           </section>
         </div>
@@ -487,10 +508,10 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <div class="modal-inner">
-<h4 id="modalTitle"></h4>
-      <p id="modalDescription"></p>
+        <h4 id="modalTitle"></h4>
+        <p id="modalDescription"></p>
       </div>
-      
+
     </div>
   </div>
   <!-- ============= About start ================ -->
@@ -593,8 +614,8 @@
       },
       breakpoints: {
         1024: { slidesPerView: 2 },
-        768: { slidesPerView: 2 },
-        480: { slidesPerView: 1 },
+        600: { slidesPerView: 2 },
+        0: { slidesPerView: 1 }, // This covers 600px and below
       },
       on: {
         init: function () {
@@ -635,12 +656,12 @@
       currentIndex = index;
       document.getElementById('lightbox-img').src = images[currentIndex];
       document.getElementById('lightbox-modal').style.display = 'flex';
-       document.body.classList.add('no-scroll'); // ⛔ Disable scroll
+      document.body.classList.add('no-scroll'); // ⛔ Disable scroll
     }
 
     function closeLightbox() {
       document.getElementById('lightbox-modal').style.display = 'none';
-        document.body.classList.remove('no-scroll'); // ✅ Enable scroll
+      document.body.classList.remove('no-scroll'); // ✅ Enable scroll
     }
 
     function changeSlide(direction) {
